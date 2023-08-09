@@ -47,24 +47,24 @@ while running:
     print("Computer: ", computer)
 
     if player == computer:
-        print("It's a tieミ⁠●⁠﹏⁠☉⁠ミ!!!")
+        print("It's a tie")
     elif player == "rock" and computer == "scissors":
-        print("You win (⁠つ⁠≧⁠▽⁠≦⁠)⁠つ!!!")
+        print("You win ")
         wins += 1  # Increment the wins by one
     elif player == "paper" and computer == "rock":
-        print("You win (⁠つ⁠≧⁠▽⁠≦⁠)⁠つ!!!")
+        print("You win ")
         wins += 1  # Increment the wins by one
     elif player == "scissors" and computer == "paper":
-        print("You win (⁠つ⁠≧⁠▽⁠≦⁠)⁠つ!!!")
+        print("You win ")
         wins += 1  # Increment the wins by one
     else:
-        print("You lose(⁠-̩̩⁠-̩̩⁠-̩̩⁠-̩̩⁠-̩̩⁠_⁠_⁠_⁠-̩̩⁠-̩̩⁠-̩̩⁠-̩̩⁠-̩̩⁠)!!!")
+        print("You lose")
         losses += 1 
     cur.execute("UPDATE scores SET wins = %s, losses = %s WHERE name = %s AND age = %s", (wins, losses, name, age))
     conn.commit()
     print("Your score:",wins ,"wins", losses ,"losses")
     if not input("Play again? y/n:").lower() == "y":
         running = False
-print("Thanks for playing!!!!(⁠＾⁠∇⁠＾⁠)⁠ﾉ⁠♪")
+print("Thanks for playing")
 cur.close()
 conn.close()
