@@ -30,4 +30,8 @@ The Python script `rps_game.py` connects to the PostgreSQL database, gets player
 
 This code was created for educational purposes and is a simple demonstration of using PostgreSQL with Python for a game application.
 
+## Contact
+
+For more details, contact me via sokheng.soeng22@kit.edu.kh
+
 
